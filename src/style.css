@@ -1,0 +1,80 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  color-scheme: dark;
+}
+
+html {
+  font-size: 16px;
+}
+
+body {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: 400;
+  color: rgba(242, 236, 250, 0.94);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 2rem;
+  -webkit-font-smoothing: antialiased;
+  overflow: hidden;
+  background: #06050c;
+}
+
+canvas#bg {
+  position: fixed;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+
+header,
+main,
+footer {
+  position: relative;
+  z-index: 1;
+}
+
+main {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  padding-top: clamp(0.25rem, 2vh, 1.25rem);
+  max-width: 40rem;
+}
+
+h1 {
+  font-size: clamp(1.5rem, 5vw, 2.5rem);
+  font-weight: 400;
+  letter-spacing: -0.02em;
+  margin-bottom: 1rem;
+  text-shadow: 0 0.06em 0.8em rgba(18, 10, 46, 0.35);
+}
+
+main p {
+  font-size: clamp(0.875rem, 2vw, 1rem);
+  line-height: 1.5;
+  color: rgba(228, 220, 240, 0.75);
+  text-wrap: balance;
+}
+
+footer {
+  font-size: 0.875rem;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+  transition: opacity 160ms ease;
+}
+
+a:hover {
+  opacity: 0.55;
+}
