@@ -287,6 +287,7 @@ const renderer = new THREE.WebGLRenderer({
 });
 
 renderer.domElement.id = "bg";
+renderer.domElement.className = "fixed inset-0 -z-10 h-full w-full";
 document.body.prepend(renderer.domElement);
 
 const scene = new THREE.Scene();

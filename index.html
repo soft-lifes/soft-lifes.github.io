@@ -1,23 +1,38 @@
 <!doctype html>
-<html lang="en">
+<html lang="en" class="[color-scheme:dark]">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>soft lifes</title>
   </head>
-  <body>
-    <header></header>
-    <main>
-      <h1>soft lifes</h1>
-      <p>
-        Creative studio for humans and machines.<br />
-        Soft power for hard problems.
+  <body
+    class="text-[rgba(228,220,240,0.75)] flex min-h-screen flex-col justify-between overflow-hidden p-8 [font-family:Helvetica_Neue,Helvetica,Arial,sans-serif] font-normal antialiased"
+  >
+    <header class="relative z-10"></header>
+    <main
+      class="relative z-10 flex max-w-[40rem] flex-1 flex-col justify-start"
+    >
+      <h1
+        class="mb-2 text-[clamp(1.5rem,5vw,2.5rem)] font-normal leading-none tracking-[-0.02em] [text-shadow:0_0.06em_0.8em_rgba(18,10,46,0.35)]"
+      >
+        soft lifes
+      </h1>
+      <p class="text-sm [text-wrap:balance]">
+        Creative studio for humans and machines.
       </p>
     </main>
-    <footer>
-      <a href="mailto:ping@soft-lifes.com">ping@soft-lifes.com</a>
-      <span aria-hidden="true"> · </span>
-      <a href="https://github.com/soft-lifes" target="_blank" rel="noreferrer noopener">
+    <footer class="relative z-10 text-sm flex flex-col">
+      <a
+        class="text-inherit no-underline transition-opacity ease-in-out hover:opacity-[0.55]"
+        href="mailto:ping@soft-lifes.com"
+        >ping@soft-lifes.com</a
+      >
+      <a
+        class="text-inherit no-underline transition-opacity ease-in-out hover:opacity-[0.55]"
+        href="https://github.com/soft-lifes"
+        target="_blank"
+        rel="noreferrer noopener"
+      >
         github.com/soft-lifes
       </a>
     </footer>

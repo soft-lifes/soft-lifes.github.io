@@ -13,6 +13,8 @@
     "tweakpane": "^4.0.5"
   },
   "devDependencies": {
+    "@tailwindcss/vite": "^4.1.18",
+    "tailwindcss": "^4.1.18",
     "vite": "^6.2.0"
   }
 }
